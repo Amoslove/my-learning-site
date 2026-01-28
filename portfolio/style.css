@@ -1,0 +1,23 @@
+header{
+  text-align: center;
+}
+
+
+section{
+  text-align: center;
+}
+
+header img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+ section article img{
+  width: 300px;
+}
+
+section ul{
+  list-style: none;
+}
