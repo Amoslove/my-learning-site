@@ -6,6 +6,11 @@ body{
 *{
   list-style: none;
 }
+
+.main img{
+  object-fit: contain;
+  
+}
 header{
   text-align: center;
 }
