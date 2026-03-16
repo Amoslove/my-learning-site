@@ -17,6 +17,9 @@ body{
 }
 header{
   text-align: center;
+  width: 100%;
+
+
 }
 div.main{
   text-align: center;
@@ -40,7 +43,7 @@ header img{
 /* nav section */
 nav a{
   display: inline-flex;
-  padding: 20px;
+  padding-right: 10px;
   font-size: 15px;
   font-weight: 800;
   text-decoration: none;
@@ -68,29 +71,10 @@ section.intro{
 
 
 
-/* flex demo starts here */
-
-.container{
-  /* background-color: yellow; */
-  height: 100vh;
-  border: 2px solid #ccc;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-
-}
-
-.box{
-  height: 150px;
-  background-color: #dc823a;
-  border-radius: 2px solid black;
-  margin: 10px;
-}
-
-/* flex demo ends here  */
 
 
-/* for profile card style */
+
+/* flex demo*/
 
 .profile-card-body{
   display: flex;
@@ -105,6 +89,8 @@ section.intro{
 
 .profile-card{
    display: flex;
+   justify-content: center;
+   align-items: center;
    border-radius: 12px solid black;
    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
    max-width: 500px;
@@ -157,6 +143,7 @@ section.intro{
  }
 
  .contact-info{
+  border-radius: 5px;
   margin-top: 20px;
   font-size: 18px;
   color: #616161;
@@ -187,17 +174,65 @@ section.intro{
  .skills{
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
  }
 
  .skill{
-  background-color: #1a2374;
-  color: #ffff;
+  background-color: rgb(255, 221, 0);
+  color: #1a2374;
   padding: 5px 10px;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   font-size: 14px;
-  text-align: center;
+  font-weight: bold;
+
  }
+
+ .skill:hover{
+  background-color: #1a2374;
+  color: #cac3c3;
+  cursor: pointer;
+ }
+
+
+ .cta-button{
+  background-color: #1b1a74;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: lowercase;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: auto;
+  margin: 10px;
+ }
+
+
+ 
+ .cta-button{
+  background-color: #1b1a74;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  margin: 10px;
+ }
+  .cta-button a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+
+ }
+
+  .cta-button:hover{
+    background-color: rgb(255, 191, 0);
+    color: #1a2374;
+    cursor: pointer;
+  }
+ /* flex demo ends here */
 
