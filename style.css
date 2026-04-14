@@ -1,47 +1,58 @@
-body{
+/* css variables  */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #34495e;
+  --bg-color: #ecf0f1;
+  --white-color: #ffffff;
+}
+
+/* the home section */
+body {
   padding-top: 50px;
   background-color: #ffff;
 }
 
-*{
+* {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
-.main div{
-  background-image: url(images/web.jpg);
+.main div {
+  background-image: linear-gradient(rgba(226, 185, 35, 0.286), rgb(174, 105, 226)) , url(images/web.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
 }
-header{
+header {
   text-align: center;
   width: 100%;
-
-
 }
-div.main{
+div.main {
   text-align: center;
 }
 
-
-section{
+.home section {
   text-align: center;
 }
 
-header img{
+header img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
 
- section article img{
+section article img {
   width: 300px;
 }
 /* nav section */
-nav a{
+nav a {
   display: inline-flex;
   padding-right: 10px;
   font-size: 15px;
@@ -51,105 +62,102 @@ nav a{
   color: beige;
 }
 
-nav a:hover{
+nav a:hover {
   color: rgb(6, 127, 233);
   transition: ease-in, 0.5s;
 }
-.navbar{
+.navbar {
   background-color: #272525;
-  /* background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/woman.jpg); */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.836),rgba(0,0,0,0.6)), url(images/woman.jpg);
   top: 0;
   position: fixed;
   z-index: 1000;
   width: 100%;
   padding: 30px 30px;
-  object-fit: cover;
 }
-section.intro{
+section .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
   background-color: #eee;
+
 }
-
-
-
-
-
+/* the home section  endd here*/
 
 /* flex demo*/
 
-.profile-card-body{
+.profile-card-body {
   display: flex;
   justify-content: center;
   flex-direction: row;
   background-color: red;
   height: 100vh;
-  align-items: center; 
-  background-color:#f0f0f0 ;
+  align-items: center;
+  background-color: #f0f0f0;
   margin: 0;
 }
 
-.profile-card{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 12px solid black;
-   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-   max-width: 500px;
-   width: 100%;
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px solid black;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
 }
 
-.profile-sidebar{
+.profile-sidebar {
   background-color: #1a2374;
   text-align: center;
   padding: 30px;
 }
 
-.profilephoto{
+.profilephoto {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid yellow ;
+  border: 4px solid yellow;
   margin-bottom: 15px;
- }
+}
 
- .main-profile{
+.main-profile {
   background-color: #fff;
   padding: 30px;
+}
 
- }
-
- h2{
+h2 {
   color: #ffff;
   margin: 10px;
- }
+}
 
- .job-title{
+.job-title {
   color: #ffff;
   font-size: 18px;
- 
- }
+}
 
- .company{
-  font-weight: bolder ;
+.company {
+  font-weight: bolder;
   color: rgb(255, 187, 0);
- }
+}
 
- .bio{ 
+.bio {
   color: #616161;
   font-size: 18px;
   margin-bottom: 15px;
+}
 
-
- }
-
- .contact-info{
+.contact-info {
   border-radius: 5px;
   margin-top: 20px;
   font-size: 18px;
   color: #616161;
- }
+}
 
- .social-links{
+.social-links {
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -157,45 +165,42 @@ section.intro{
   text-decoration: none;
   color: #1a2374;
   font-size: 20px;
- }
+}
 
- .social-links a{
+.social-links a {
   color: #0d1349ed;
   font-size: 20px;
   cursor: pointer;
- }
+}
 
- .social-links a:hover{
+.social-links a:hover {
   color: rgb(255, 191, 0);
   font-size: 20px;
-  
- }
+}
 
- .skills{
+.skills {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 20px;
- }
+}
 
- .skill{
+.skill {
   background-color: rgb(255, 221, 0);
   color: #1a2374;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 14px;
   font-weight: bold;
+}
 
- }
-
- .skill:hover{
+.skill:hover {
   background-color: #1a2374;
   color: #cac3c3;
   cursor: pointer;
- }
+}
 
-
- .cta-button{
+.cta-button {
   background-color: #1b1a74;
   padding: 10px;
   font-size: 17px;
@@ -207,11 +212,9 @@ section.intro{
   width: 100%;
   padding: auto;
   margin: 10px;
- }
+}
 
-
- 
- .cta-button{
+.cta-button {
   background-color: #1b1a74;
   padding: 10px;
   font-size: 17px;
@@ -221,18 +224,377 @@ section.intro{
   border: none;
   width: 100%;
   margin: 10px;
- }
-  .cta-button a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
+}
+.cta-button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
- }
+.cta-button:hover {
+  background-color: rgb(255, 191, 0);
+  color: #1a2374;
+  cursor: pointer;
+}
+/* flex demo ends here */
 
-  .cta-button:hover{
-    background-color: rgb(255, 191, 0);
-    color: #1a2374;
-    cursor: pointer;
-  }
- /* flex demo ends here */
+/* product card starts here */
 
+.product-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f5f7f8;
+  margin: 0;
+}
+
+.product-card {
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 5px;
+  color: #34495e;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.product-descrition {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.discount-tag {
+  position: absolute;
+  top: 58px;
+  right: 37%;
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 30px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+  font-size: 14px;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.btn-add-to-cart {
+  background-color: #3498db;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* product card ends here */
+
+
+
+/* practice project section starts here */
+
+.practice-body {
+  background-color: var(--bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.practice-body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.practice-body header{
+  background-color: var(--white-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.practice-body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.practice-body  .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.practice-body .nav-links {
+  display: flex;
+}
+
+.practice-body .nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.practice-body .nav-links a:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.practice-body .hero {
+  background:
+    linear-gradient(130deg, rgba(75, 123, 236, 0.5), rgba(67, 206, 162, 0.7)),
+    url(images/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.practice-body .hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.practice-body .hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.practice-body .btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.practice-body .btn:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.practice-body .about {
+  padding: 100px 0;
+}
+
+.practice-body .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.practice-body .about-text {
+  flex: 1;
+ 
+}
+
+.practice-body .about-image {
+  flex: 1;
+}
+
+.practice-body .about-text h2 {
+  color: var(--text-color);
+  padding-left: 0;
+  text-align: left;
+  font-size: 37px;
+}
+
+.practice-body .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.practice-body .portfolio {
+  padding: 100px 0;
+  background-color: #ecf0f1;
+}
+
+.practice-body .portfolio h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: var(--primary-color);
+}
+
+.practice-body .portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ .practice-body .portfolio-item{
+  width: 30%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.practice-body .portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practice-body .portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.practice-body .portfolio-item-content{
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.practice-body .portfolio-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.practice-body .portfolio-item p {
+  font-size: 14px;
+  color: #616161;
+  margin-bottom: 15px;
+}
+
+.practice-body .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.practice-body .category {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600PX;
+}
+
+.practice-body .cta{
+  background:linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  padding: 100 50px;
+  display: flex;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.cta .container {
+  padding:  40px 0;
+}
+
+
+.practice-body .cta h2{
+  margin-bottom: 30px;
+}
+
+.practice-body .cta p{
+  margin-bottom: 30px;
+}
+
+.practice-body .contact{
+  padding: 100px 0;
+  background-color: var(--white-color);
+}
+
+
+
+.practice-body .contact h2{
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 36px;
+} 
+
+
+.practice-body form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.practice-body form-group {
+ margin-bottom: 15px;
+}
+
+.practice-body label{
+  /* display: block; */
+  margin-bottom: 5px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.practice-body input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.practice-body textarea {
+  height: 150px;
+}
+
+.practice-body footer {
+  background-color: var(--text-color);
+  text-align: center;
+  padding: 20px 0;
+  color: var(--white-color)
+}
+/* practice product section ends here */
